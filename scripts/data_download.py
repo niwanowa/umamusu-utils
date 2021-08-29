@@ -11,11 +11,11 @@ logger = get_logger(__name__)
 
 LIMIT = 200
 SKIP_EXISTING = True
-ASYNC_DOWNLOAD = False
+ASYNC_DOWNLOAD = True
 
 DATA_ROOT = get_storage_folder('data')
 HOSTNAME = 'https://prd-storage-umamusume.akamaized.net/dl/resources/'
-ASSETS_ENDPOINT = HOSTNAME + '/Android/assetbundles/{0:.2}/{0}'
+ASSETS_ENDPOINT = HOSTNAME + '/Windows/assetbundles/{0:.2}/{0}'
 GENERIC_ENDPOINT = HOSTNAME + '/Generic/{0:.2}/{0}'
 MANIFEST_ENDPOINT = HOSTNAME + '/Manifest/{0:.2}/{0}'
 BLOB_TABLE = 'a'
